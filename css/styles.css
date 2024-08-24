@@ -1,11 +1,14 @@
 :root {
   --blekit:rgba(33, 150, 243, 1);
-  ;
+  --superjasnoszary: rgba(245, 244, 250, 1);
+  --jasnoszary: rgba(117, 117, 117, 1);
+  --ciemnoszary:  rgba(33, 33, 33, 1);
 }
 body 
 {
     font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
     font-size: 14px;
+    line-height: 117%;
 }
 
 .link
@@ -19,7 +22,6 @@ body
   font-family: 'Raleway', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 117%;
   color: inherit;
   /*line-height: 30.52px;
   letter-spacing: 0.03em;
@@ -34,13 +36,12 @@ body
 .menu > .link
 {
   font-weight: 500;
-  line-height: 117%;
-  background: rgba(33, 33, 33, 1);
+  background:var(--ciemnoszary);
 }
 
 .kontakt
 {
-  color:rgba(117, 117, 117, 1);
+  color:var(--jasnoszary);
 }
 
 .ciemnasek
@@ -52,6 +53,12 @@ body
 .naguwek
 {
   text-align: center;
+  font-size: 16px;
+}
+
+h2.naguwek
+{
+  font-size: 36px;
 }
 
 .ciemnasek > .naguwek
@@ -61,18 +68,60 @@ body
   line-height: 136%;
 }
 
-.przycisk_centralny
+.przycisk
 {
-  background: rgba(33, 150, 243, 1);
+  color: var(--ciemnoszary);
+  background: var(--superjasnoszary);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 162.5%;
+  border-width: 0;
+  cursor:pointer;
+}
+
+.przycisk:hover, .przycisk:focus
+{
+  color: white;
+  background: var(--blekit);
+  
+}
+
+.ciemnasek .przycisk
+{
+  background: var(--blekit);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: inherit;
   font-size: 16px;
   font-weight: 700;
-  line-height: 187.5%
+  line-height: 187.5%;
   text-align: center;
+}
+
+.wazne
+{
+  font-weight: 700;
+  color: var(--ciemnoszary);
+}
+
+.zwykle
+{
+  color: var(--jasnoszary);
+}
+
+.podpis
+{
+  font-size: 18px;
+}
+
+.kategoria
+{
+  font-size: 16px;
 }
 
 .ciemnasek > .kontakt
 {
   color: rgba(255, 255, 255, 0.6);
 }
+
+
